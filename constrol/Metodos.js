@@ -3,9 +3,6 @@ class calcula {
         this.numero = numero
         this.valor = valor
         this.enviar = enviar
-        this.a = document.getElementById('a').value;
-        this.b = document.getElementById('b').value;
-        this.r = document.getElementById('r').value;
     }
     
             numero(){
