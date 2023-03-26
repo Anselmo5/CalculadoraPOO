@@ -11,25 +11,30 @@
         <div class="container">
             <div class="inp">
                 <div class="form__group field">
-                    <input type="number" required="" placeholder="Name" class="form__field" type="input">
+                    <input type="number" id="a" required="" placeholder="Name" class="form__field" type="input">
                     <label class="form__label" for="name">Numero</label>
                 </div>
 
                 <div class="form__group field">
-                        <input type="number" required="" placeholder="Name" class="form__field" type="input">
+                        <input type="number" id="b" required="" placeholder="Name" class="form__field" type="input">
                         <label class="form__label" for="name">Numero</label>
                 </div>
 
                 <div class="Result">
-                        <input type="number" readonly placeholder="RESULTADO">
+                        <input type="number" id="r" readonly placeholder="RESULTADO">
                 </div>
                     <div class="alingButton">
-                        <button onclick="enviar()" id="En">
+                        <button>
                              Button
                         </button>
                  </div>
             </div>
         </div>
      </div>
+
+     <script src="../constrol/Metodos.js">
+        a.numero()
+        b.Enviar()
+     </script>
 </body>
 </html>
