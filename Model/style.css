@@ -1,7 +1,25 @@
 /* style input*/
 
 body{
-background: url(../img/XrgL6.jpg)no-repeat ;
+ animation-name: background;
+ animation-duration: 10s;
+ animation-direction: alternate;
+ animation-iteration-count: infinite;
+ background:linear-gradient( to right,#00a8f7,#03a7f3,#00ccff,#22c0ff,#0daeee ) ;
+ background-size: 500%;
+   
+}
+
+@keyframes background{
+
+  0%{
+      background-position-x: 0%;
+  }
+  
+  100%{
+      background-position-x: 100%;
+  }
+
 }
 
 *{
@@ -134,6 +152,24 @@ button:hover::before {
   /*Result Input*/
 
 
+  .Result{
+    margin-top: 30px;
+  }
+  
+  .Result input{
+    width: 200px;
+    height: 30px;
+    padding: 4px;
+    box-shadow: 0px 2px 0px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    background: #ffffff48;
+  }
+
+  .Result ::placeholder{
+    color: #646363;
+  }
 
   /* Fim Result Inpute*/
 
@@ -143,7 +179,8 @@ button:hover::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 130px;
+    flex-direction: row;
+    margin-top: 14vh;
   }
 
   .container{
@@ -161,17 +198,44 @@ button:hover::before {
   margin-top: 60px;
 }
 
-
-.Result{
-  margin-top: 30px;
+@media screen  and (max-width:1075px){
+  .aling{
+    margin-top: 6vh;
+  }
 }
 
+
+
+
+
+  @media screen  and (max-width:474px){
+  .aling{
+  margin-top: 9vh;
+ }
+}
+
+@media screen  and (max-width:280px){
+.form__field{
+  width: 180px;
+ margin-left: 15px;
+}
+
+.form__label{
+  margin-left: 13px;
+}
+  
 .Result input{
-  width: 200px;
-  height: 30px;
-  padding: 4px;
-  box-shadow: 0px 2px 0px;
-  border: none;
-  outline: 0;
-  font-size: 16px;
+  width: 140px;
+  margin-left:26px;
+}
+
+.Result ::placeholder{
+  text-align: center;
+}
+
+ button{
+  width: 100px;
+  height: 45px;
+  text-align: center;
+}
 }
