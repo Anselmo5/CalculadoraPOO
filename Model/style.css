@@ -1,26 +1,15 @@
 /* style input*/
 
 body{
- animation-name: background;
- animation-duration: 10s;
- animation-direction: alternate;
- animation-iteration-count: infinite;
- background:linear-gradient( to right,#00a8f7,#03a7f3,#00ccff,#22c0ff,#0daeee ) ;
- background-size: 500%;
-   
+ background: url(../img/thumb-1920-1209425.png);
+
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;  
 }
 
-@keyframes background{
 
-  0%{
-      background-position-x: 0%;
-  }
-  
-  100%{
-      background-position-x: 100%;
-  }
-
-}
 
 *{
     padding: 0;
@@ -181,6 +170,7 @@ button:hover::before {
     align-items: center;
     flex-direction: row;
     margin-top: 14vh;
+    margin-right: 35px;
   }
 
   .container{
@@ -192,6 +182,8 @@ button:hover::before {
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
+   
+    
 }
 
 .inp {
@@ -199,8 +191,12 @@ button:hover::before {
 }
 
 @media screen  and (max-width:1075px){
+  body{
+    height: 95vh;
+  }
   .aling{
     margin-top: 6vh;
+    margin-right:30px;
   }
 }
 
@@ -209,24 +205,35 @@ button:hover::before {
 
 
   @media screen  and (max-width:474px){
+    body{
+      margin-top: 6vh;
+      margin-left:10px;
+    }
+
   .aling{
   margin-top: 9vh;
  }
 }
 
 @media screen  and (max-width:280px){
+body{
+  margin-top: 6vh;
+    margin-left: 30px;
+}
+
+
 .form__field{
   width: 180px;
- margin-left: 15px;
+ margin-left: 9px;
 }
 
 .form__label{
-  margin-left: 13px;
+  margin-left: 10px;
 }
   
 .Result input{
   width: 140px;
-  margin-left:26px;
+  margin-left:20px;
 }
 
 .Result ::placeholder{
