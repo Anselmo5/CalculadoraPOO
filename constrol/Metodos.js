@@ -1,28 +1,22 @@
 class calcula {
-    constructor(numero,valor,enviar){
+    constructor(numero,valor){
         this.numero = numero
         this.valor = valor
-        this.enviar = enviar
     }
-    
-            numero(){
-                const a = document.getElementById('a').value;
-                const b = document.getElementById('b').value;
-                const r = document.getElementById('r').value;
-            
-        }
 
-        Enviar(){
-            function Enviar(){
-                let a = document.getElementById("a").value;
-                let b = document.getElementById("b").value;
-                let x = parseInt(a) / parseInt(b)
-                
-                document.getElementById("r").value = x
-                alert('Seu calculo foi realizado')
-            }
-        }
-
+    Cacular(){
+        this.numero = Number(this.numero)
+        this.valor = Number(this.valor)
+        const value = document.getElementById("r").value = this.numero / this.valor
+        alert('Seu calculo foi realizado')
+    }
         
 }
 
+function enviar(){
+    let x = document.getElementById("a").value
+    let y = document.getElementById("b").value
+    const calculo = new calcula(x, y)
+    console.log("enviado");
+    calculo.Cacular()
+} 
