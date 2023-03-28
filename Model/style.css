@@ -195,13 +195,10 @@ button:hover::before {
     height: 95vh;
   }
   .aling{
-    margin-top: 6vh;
-    margin-right:30px;
+    margin-top: 9vh;
+    margin-right:20px;
   }
 }
-
-
-
 
 
   @media screen  and (max-width:474px){
