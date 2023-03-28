@@ -6,7 +6,7 @@ class calcula {
 
     Cacular(){
         this.numero = Number(this.numero)
-        this.valor = Number(this.valor)
+        this.valor = Number(this.valor) 
         const value = document.getElementById("r").value = this.numero / this.valor
         alert('Seu calculo foi realizado')
     }
@@ -14,11 +14,9 @@ class calcula {
     
     
 limpeza(){
-    this.numero = Number(this.numero)
-    this.valor = Number(this.valor)
-    this.numero = ("")
-    this.valor = ("")
-    alert("Tudo foi limpo")
+    const value = document.getElementById("r").value = ("")
+    alert('Seu calculo foi realizado')
+
 }
 
 }
@@ -35,7 +33,7 @@ function enviar(){
 function limpar(){
     let x = document.getElementById("a").value
     let y = document.getElementById("b").value
-    const limpeza = new limpar(x,y)
+    const  limpar = new limpeza(x,y)
     console.log("Limpo");
     x = (" ")
     y = (" ")
