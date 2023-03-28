@@ -10,14 +10,6 @@ class calcula {
         const value = document.getElementById("r").value = this.numero / this.valor
         alert('Seu calculo foi realizado')
     }
-    
-    
-    
-limpeza(){
-    const value = document.getElementById("r").value = ("")
-    alert('Seu calculo foi realizado')
-
-}
 
 }
 
@@ -30,10 +22,11 @@ function enviar(){
 } 
 
 
+
 function limpar(){
-    let x = document.getElementById("a").value
-    let y = document.getElementById("b").value
-    const  limpar = new limpeza(x,y)
+    let x = document.getElementById("a").value = ("")
+    let y = document.getElementById("b").value = ("")
+    const value = document.getElementById("r").value = ("")
     console.log("Limpo");
     x = (" ")
     y = (" ")
