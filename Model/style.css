@@ -2,11 +2,10 @@
 
 body{
  background: url(../img/thumb-1920-1209425.png);
-
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
- position: relative;  
+position: relative;
 }
 
 
@@ -174,7 +173,7 @@ button:hover::before {
     align-items: center;
     flex-direction: row;
     margin-top: 14vh;
-    margin-right: 35px;
+    margin-right: 35px; 
   }
 
   .container{
@@ -199,8 +198,8 @@ button:hover::before {
     height: 95vh;
   }
   .aling{
-    margin-top: 9vh;
-    margin-right:20px;
+     margin-top: 9vh; 
+     margin-right:20px; 
   }
 }
 
@@ -218,7 +217,7 @@ button:hover::before {
 
 @media screen  and (max-width:280px){
 body{
-  margin-top: 6vh;
+  margin-top: 9vh;
     margin-left: 15px;
 }
 
@@ -256,8 +255,10 @@ body{
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
+
  
   
 }
+
 
 }
